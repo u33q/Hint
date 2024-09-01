@@ -18,10 +18,13 @@ actor HintLoader {
                 group.addTask { try await self.loadHint(from: config.filename) }
             }
             
+            // Collect results within the actor-isolated context
             var hints: [Hint] = []
             for try await hint in group {
                 hints.append(hint)
             }
+            
+            // Sort the hints within the actor-isolated context
             return hints.sorted { $0.title < $1.title }
         }
     }

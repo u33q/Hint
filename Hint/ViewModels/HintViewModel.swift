@@ -3,6 +3,7 @@ import SwiftUI
 
 @MainActor
 class HintViewModel: ObservableObject {
+    // Published properties will automatically update the UI when changed
     @Published var hints: [Hint] = []
     @Published var selectedHint: Hint?
     @Published var isLoading = false
