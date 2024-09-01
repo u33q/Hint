@@ -21,6 +21,9 @@
 		888990F42C843D3200ABA95D /* HintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888990F32C843D3200ABA95D /* HintApp.swift */; };
 		888990F62C843D3F00ABA95D /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888990F52C843D3F00ABA95D /* MenuBarView.swift */; };
 		888990F82C843EC900ABA95D /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 888990F72C843EC900ABA95D /* info.plist */; };
+		88C01C042C844B5E00500A18 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 88C01C022C844B5D00500A18 /* README.md */; };
+		88C01C052C844B5E00500A18 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 88C01C032C844B5D00500A18 /* LICENSE */; };
+		88C01C072C844B9000500A18 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 88C01C062C844B9000500A18 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		888990F32C843D3200ABA95D /* HintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintApp.swift; sourceTree = "<group>"; };
 		888990F52C843D3F00ABA95D /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		888990F72C843EC900ABA95D /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		88C01C022C844B5D00500A18 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		88C01C032C844B5D00500A18 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		88C01C062C844B9000500A18 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		888990B12C843B3E00ABA95D = {
 			isa = PBXGroup;
 			children = (
+				88C01C062C844B9000500A18 /* .gitignore */,
+				88C01C032C844B5D00500A18 /* LICENSE */,
+				88C01C022C844B5D00500A18 /* README.md */,
 				888990BC2C843B3E00ABA95D /* Hint */,
 				888990BB2C843B3E00ABA95D /* Products */,
 			);
@@ -215,9 +224,12 @@
 			files = (
 				888990F02C843C4200ABA95D /* vim.json in Resources */,
 				888990F22C843C8100ABA95D /* hints.json in Resources */,
+				88C01C052C844B5E00500A18 /* LICENSE in Resources */,
 				888990F82C843EC900ABA95D /* info.plist in Resources */,
+				88C01C042C844B5E00500A18 /* README.md in Resources */,
 				888990C52C843B4000ABA95D /* Preview Assets.xcassets in Resources */,
 				888990EE2C843C3400ABA95D /* markdown.json in Resources */,
+				88C01C072C844B9000500A18 /* .gitignore in Resources */,
 				888990C22C843B4000ABA95D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
