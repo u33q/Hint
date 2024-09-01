@@ -1,0 +1,22 @@
+{
+  "id": "1",
+  "title": "Markdown",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Headers",
+      "items": [
+        {
+          "id": "1",
+          "command": "# H1",
+          "description": "Heading 1"
+        },
+        {
+          "id": "2",
+          "command": "## H2",
+          "description": "Heading 2"
+        }
+      ]
+    }
+  ]
+}

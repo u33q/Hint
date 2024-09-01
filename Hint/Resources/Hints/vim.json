@@ -1,0 +1,22 @@
+{
+  "id": "2",
+  "title": "Vim",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Movement",
+      "items": [
+        {
+          "id": "1",
+          "command": "h",
+          "description": "Move left"
+        },
+        {
+          "id": "2",
+          "command": "j",
+          "description": "Move down"
+        }
+      ]
+    }
+  ]
+}
