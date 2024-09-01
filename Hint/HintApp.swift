@@ -9,6 +9,7 @@ struct HintApp: App {
         MenuBarExtra("Hint", systemImage: "lightbulb") {
             MenuBarView()
                 .environmentObject(viewModel)
+                .frame(width: 500, height: 300)
         }
         .menuBarExtraStyle(.window)
 

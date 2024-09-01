@@ -4,6 +4,7 @@ import SwiftUI
 @MainActor
 class HintViewModel: ObservableObject {
     @Published var hints: [Hint] = []
+    @Published var selectedHint: Hint?
     @Published var isLoading = false
     @Published var errorMessage: String?
     
@@ -22,8 +23,14 @@ class HintViewModel: ObservableObject {
             print("Loaded \(hints.count) hints")
         } catch {
             errorMessage = "Failed to load hints: \(error.localizedDescription)"
+            print("Error loading hints: \(error)")
         }
         
         isLoading = false
+    }
+    
+    func selectHint(_ hint: Hint?) {
+        selectedHint = hint
+        print("Selected hint in ViewModel: \(hint?.title ?? "nil")")
     }
 }

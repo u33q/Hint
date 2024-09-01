@@ -7,18 +7,22 @@ struct HintDetailView: View {
     var body: some View {
         List {
             ForEach(hint.sections) { section in
-                Section(section.title) {
+                Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
-                        HStack {
+                        VStack(alignment: .leading) {
                             Text(item.command)
                                 .font(.system(.body, design: .monospaced))
-                            Spacer()
                             Text(item.description)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
                         }
                     }
                 }
             }
         }
         .navigationTitle(hint.title)
+        .onAppear {
+            print("HintDetailView appeared for hint: \(hint.title)")
+        }
     }
 }

@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct MenuBarView: View {
@@ -7,7 +6,11 @@ struct MenuBarView: View {
 
     var body: some View {
         NavigationSplitView {
-            HintListView(hints: viewModel.hints, selectedHint: $selectedHint)
+            List(viewModel.hints, selection: $selectedHint) { hint in
+                Text(hint.title)
+                    .tag(hint)
+            }
+            .navigationTitle("Hints")
         } detail: {
             if let hint = selectedHint {
                 HintDetailView(hint: hint)
@@ -15,12 +18,12 @@ struct MenuBarView: View {
                 Text("Select a hint")
             }
         }
-        .frame(width: 600, height: 400)
+        .frame(width: 500, height: 300)
         .task {
             await viewModel.loadHints()
         }
         .onAppear {
-            print("MenuBarView appeared")
+            print("MenuBarView appeared with \(viewModel.hints.count) hints")
         }
     }
 }
